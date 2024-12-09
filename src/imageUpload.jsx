@@ -24,7 +24,7 @@ const UploadImage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8003/api/upload-image",
+        "http://sudd-backend.vercel.app/api/upload-image",
         formData,
         {
           headers: {
@@ -50,7 +50,9 @@ const UploadImage = () => {
       <h1 className="text-2xl font-bold mb-4 text-center">Upload Image</h1>
       <form onSubmit={handleUpload}>
         <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-1">Upload Image</label>
+          <label className="block text-gray-700 font-medium mb-1">
+            Upload Image
+          </label>
           <input
             type="file"
             accept="image/*"

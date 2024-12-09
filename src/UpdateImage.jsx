@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const UpdateImage = () => {
-  const documentId = "67561de5a90263650f87c3fa"; 
+  const documentId = "6756d5033e6aa084a076e6b9";
   const [image, setImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -25,7 +25,7 @@ const UpdateImage = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8003/api/update-image/${documentId}`,
+        `http://sudd-backend.vercel.app/api/update-image/${documentId}`,
         formData,
         {
           headers: {
@@ -51,7 +51,9 @@ const UpdateImage = () => {
       <h1 className="text-2xl font-bold mb-4 text-center">Update Image</h1>
       <form onSubmit={handleUpdate}>
         <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-1">Upload New Image</label>
+          <label className="block text-gray-700 font-medium mb-1">
+            Upload New Image
+          </label>
           <input
             type="file"
             accept="image/*"

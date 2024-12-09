@@ -21,19 +21,19 @@ const UpdateTexts = () => {
       const endpoints = [
         {
           name: "text1",
-          endpoint: `http://localhost:8003/api/update-text1/${documentId}`,
+          endpoint: `http://sudd-backend.vercel.app/api/update-text1/${documentId}`,
         },
         {
           name: "text2",
-          endpoint: `http://localhost:8003/api/update-text2/${documentId}`,
+          endpoint: `http://sudd-backend.vercel.app/api/update-text2/${documentId}`,
         },
         {
           name: "text3",
-          endpoint: `http://localhost:8003/api/update-text3/${documentId}`,
+          endpoint: `http://sudd-backend.vercel.app/api/update-text3/${documentId}`,
         },
         {
           name: "text4",
-          endpoint: `http://localhost:8003/api/update-text4/${documentId}`,
+          endpoint: `http://sudd-backend.vercel.app/api/update-text4/${documentId}`,
         },
       ];
 
